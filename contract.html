@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>contract</title>
+    <link rel="stylesheet" href="Contract.css">
+    <script src="contract.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="Black.png" alt="Logo" height="50" width="50">
+        </div>
+        <!-- Buttons -->
+        <nav>
+            <ul>
+              <li><a href="home.php">Home</a></li>
+              <li><a href="about us.html">About us</a></li>
+              <li><a href="support.html">Contact</a></li>
+            </ul>
+          </nav>
+        <!-- sing out button -->
+        <div class="search-bar">
+            <button class="sign-out-button"><a href="login.php" class="button-link">Sign out</a></button>
+        </div>
+        <!-- Icons -->
+        <div class="icons">
+            <a href="profile.html" class="button-link">
+            <button class="icon-button">
+                <img src="notification.jpg" alt="Notification" class="icon-image">
+            </button>
+        </a>
+            <a href="profile.html" class="button-link">
+            <button class="icon-button">
+                <img src="profile.png" alt="Profile" class="icon-image">
+            </button>
+            </a>
+        </div>
+    </header>
+
+    <div class="popup-menu">
+        <button class="menu-button"><a href="home.php" class="button-link">Dashboard</a> </button>
+        <button class="menu-button"><a href="contract.html" class="button-link">Contracts</a></button>
+        <button class="menu-button"><a href="Invoice.html" class="button-link">Invoices</a></button>
+        <button class="menu-button"><a href="tracking.html" class="button-link">Track Orders</a></button>
+    </div>
+    
+    <div class="web-page">
+        <h1>E-Contract</h1>
+        
+        <form>
+            <!-- General Information -->
+            <h2>General Information</h2>
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="contract-number">Contract Number</label>
+                    <input type="text" id="contract-number" name="contract-number" value="#123" disabled>
+                    
+                    <label for="language">Language</label>
+                    <select id="language" name="language">
+                        <option value="sinhala">Sinhala</option>
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                    </select>
+                    
+                    <label for="start-date">Start Date</label>
+                    <input type="date" id="start-date" name="start-date">
+                </div>
+                
+                <div class="form-col">
+                    <label for="contract-type">Type</label>
+                    <select id="contract-type" name="contract-type">
+                        <option value="type1">Type 1</option>
+                        <option value="type2">Type 2</option>
+                        <option value="type3">Type 3</option>
+                    </select>
+                    
+                    <label for="currency">Currency</label>
+                    <select id="currency" name="currency">
+                        <option value="lkr">LKR</option>
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="gbp">GBP</option>
+                    </select>
+                    
+                    <label for="end-date">End Date</label>
+                    <input type="date" id="end-date" name="end-date">
+                </div>
+            </div>
+            
+            <!-- Contractor Information -->
+            <h2>Contractor</h2>
+            <label for="supplier">Supplier</label>
+            <select id="supplier" name="supplier">
+                <option value="supplier1">standard-free shipping</option>
+                <option value="supplier2">DHL</option>
+                <option value="supplier3">FedEx</option>
+            </select>
+            
+            <div class="contractor-info">
+                <p>Polk Street,Tucson</p>
+                <p>520-822-7478</p>
+                <p>JenniferMWhitaker@teleworm.us</p>
+            </div>
+            
+            <!-- Payment Information -->
+            <h2>Payment</h2>
+            <h3>Deposit</h3>
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="deposit-amount">Deposit Amount</label>
+                    <input type="text" id="deposit-amount" name="deposit-amount" value="Rs.100,000" disabled>
+                </div>
+                <div class="form-col">
+                    <label for="deposit-date">Date</label>
+                    <input type="date" id="deposit-date" name="deposit-date">
+                </div>
+            </div>
+            
+            <label for="payment-method">Payment Method</label>
+            <select id="payment-method" name="payment-method">
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="cash">Cash</option>
+            </select>
+            
+            <div id="bank-details">
+                <label for="bank">Bank</label>
+                <select id="bank" name="bank">
+                    <option value="bank1">HSBC</option>
+                    <option value="bank2">Bank of America</option>
+                    <option value="bank3">J.P. Morgan Chase & Co</option>
+                </select>
+                
+                <label for="account-number">Account Number</label>
+                <input type="text" id="account-number" name="account-number">
+                
+                <label for="account-name">Account Name</label>
+                <input type="text" id="account-name" name="account-name">
+            </div>
+            
+            <!-- Form Actions -->
+            <div class="form-actions">
+                <button class="confirm"><a href="Invoice.html" class="button-link">Confirm</a></button>
+                <button class="cancel"><a href="explore.html" class="button-link">Cancel</a></button>
+            </div>
+        </form>
+    </div>
+    <div class="upload-box">
+        <label for="file-upload" class="upload-label">
+            <input type="file" id="file-upload" class="upload-input" multiple>
+            Add Files
+        </label>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <!-- Footer Content -->
+            <p>&copy; 2023 Company. Inc. All rights reserved. Privacy | Terms</p>
+        </div>
+        <div class="footer-right">
+            <!-- Social Media Icons -->
+            <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.youtube.com"><img src="youtube.png" alt="YouTube"></a>
+        </div>
+    </footer>
+</body>
+</html>

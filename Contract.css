@@ -1,0 +1,266 @@
+body {
+    /* Set font family and remove margin and padding */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F4F9F9;
+    margin: 0;
+    padding: 10px;
+  }
+  
+nav ul {
+    /* Navigation list styling */
+    list-style-type: none;
+    margin-right: 700px; 
+    padding: 0;
+}
+
+nav li {
+    /* Navigation list item styling */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    /* Navigation link styling */
+    color: #8d2020;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    /* Hover state for navigation links */
+    background-color: #241d1d73;
+    color: #ffffff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  
+
+.search-bar input {
+    /* Search bar input styling */
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.sign-out-button {
+    /* Sign out button styling */
+    border: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: solid;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: #00000079;
+    margin-right: 10px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    /* Icons container styling */
+    display: flex;
+    align-items: center;
+}
+
+.icon-button {
+    /* Icon button styling */
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.icon-image {
+    /* Icon image styling */
+    width: 80%;
+    height: 80%;
+    object-fit: fill;
+}
+
+.popup-menu {
+    /* Popup menu styling */
+    position:absolute;
+    z-index: 1;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    width: 200px;
+    height: 1000px;
+}
+
+.menu-button {
+    /* Menu button styling */
+    display: block;
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.web-page {
+    /* Web page styling */
+    margin: 20px;
+    margin-left: 250px;
+}
+
+h1 {
+    /* Heading 1 styling */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    /* Form styling */
+    width: 100%;
+}
+
+h2 {
+    /* Heading 2 styling */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    /* Heading 3 styling */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    /* Form row styling */
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-col {
+    /* Form column styling */
+    width: 48%;
+}
+
+label {
+    /* Label styling */
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    /* Text input and select box styling */
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.form-actions {
+    /* Form actions styling */
+    margin-top: 20px;
+}
+
+.confirm,
+.cancel {
+    /* Confirm and cancel button styling */
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: solid;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+}
+
+.contractor-info {
+    /* Contractor information styling */
+    background-color: #696161b2;
+    margin-right: 70%;
+    border-radius: 5px;
+
+    padding: 5px;
+}
+
+.upload-box {
+    /* Upload box styling */
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+.upload-label {
+    /* Upload label styling */
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-input {
+    /* Upload input styling */
+    display: none;
+}
+
+footer {
+    /* Footer styling */
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F9F9;
+    padding: 10px;
+}
+
+.footer-left p {
+    /* Footer left paragraph styling */
+    margin: 0;
+}
+
+.footer-right a {
+    /* Footer right link styling */
+    display: inline-block;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.footer-right img {
+    /* Footer right image styling */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.button-link {
+    text-decoration: none; 
+    color: inherit;
+  }

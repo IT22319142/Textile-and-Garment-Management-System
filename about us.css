@@ -1,0 +1,233 @@
+/* CSS CODE */
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F4F9F9;
+}
+
+.logo {
+  width: 200px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-right: 50px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #8d2020;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  margin-right: 10px;
+}
+
+.signin-button,
+.signup-button {
+  border: none;
+  padding: 5px;
+  text-align: center;
+  text-decoration: solid;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.signin-button {
+  background-color: #0000003a;
+}
+
+.signup-button {
+  background-color: #00000079;
+}
+
+
+.signin-button,
+.signup-button {
+  border-radius: 12px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* Background gradient */
+  background: linear-gradient(to right, #ffffff, #616060f1);
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px auto;
+  width: 80%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.centered-images {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.team-section {
+  text-align: center;
+  flex-direction: row;
+}
+
+.team-title {
+  font-size: 24px;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-weight: bold;
+}
+
+.work-together-section {
+  display: flex;
+  margin-top: 50px;
+}
+
+.work-together-form {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.work-together-heading {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.work-together-para {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+.signup-button {
+  margin-left: 0;
+}
+
+.work-together-image {
+  width: 50%;
+}
+
+/* Footer */
+footer {
+  background-color: #AAAAAA;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left img {
+  max-width: 100px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-heading {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.features-button,
+.about-button,
+.join-us-button,
+.subscribe-button {
+  border: none;
+  padding: 8px 12px;
+  background-color: #ccc;
+  color: #fff;
+  margin: 4px 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newsletter-form input[type="email"],
+.subscribe-button {
+  padding: 8px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.social-media-buttons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+.social-media-buttons a:last-child img {
+  margin-right: 0;
+}
+.button-link {
+  text-decoration: none; 
+  color: inherit;
+}
+/* End of CSS code */

@@ -1,0 +1,160 @@
+-- Create database and switch to it
+CREATE DATABASE IF NOT EXISTS CRUDSystem2;
+USE CRUDSystem2;
+
+-- Create table `crudTable1`
+CREATE TABLE IF NOT EXISTS crudTable1 (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(200) NOT NULL UNIQUE,
+    username VARCHAR(100) NOT NULL,
+    pass VARCHAR(15) NOT NULL UNIQUE
+);
+
+-- Insert data into `crudTable1`
+INSERT INTO crudTable1 (email, username, pass)
+VALUES 
+    ('example1@example.com', 'exampleuser1', 'password123'),
+    ('example2@example.com', 'exampleuser2', 'password456'),
+    ('example3@example.com', 'exampleuser3', 'password789');
+
+-- Create table `plans`
+CREATE TABLE IF NOT EXISTS plans (
+    Plan_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Starting_Date DATE,
+    Ending_Date DATE,
+    Progress_Percentage DECIMAL(5,2),
+    Labour_Hours INT
+);
+
+-- Insert data into `plans`
+INSERT INTO plans (Starting_Date, Ending_Date, Progress_Percentage, Labour_Hours)
+VALUES 
+    ('2023-06-01', '2023-06-10', 75.5, 120),
+    ('2023-06-05', '2023-06-15', 60.2, 80),
+    ('2023-06-10', '2023-06-20', 90.8, 200),
+    ('2023-06-15', '2023-06-25', 45.9, 150),
+    ('2023-06-20', '2023-06-30', 80.0, 180);
+
+-- Create table `Employees`
+CREATE TABLE IF NOT EXISTS Employees (
+    EID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    JobTitle VARCHAR(50),
+    Department VARCHAR(50),
+    EmploymentStatus VARCHAR(50)
+);
+
+-- Insert data into `Employees`
+INSERT INTO Employees (EID, Name, JobTitle, Department, EmploymentStatus) VALUES
+    (1, 'John Doe', 'Tailor', 'Production', 'Full-time'),
+    (2, 'Jane Smith', 'Seamstress', 'Production', 'Full-time'),
+    (3, 'Michael Johnson', 'Designer', 'Design', 'Full-time'),
+    (4, 'Emily Davis', 'Pattern Maker', 'Design', 'Part-time'),
+    (5, 'Robert Brown', 'Cutter', 'Cutting', 'Full-time'),
+    (6, 'Sophia Wilson', 'Sewing Machine Operator', 'Sewing', 'Full-time'),
+    (7, 'William Taylor', 'Finishing Technician', 'Finishing', 'Full-time'),
+    (8, 'Olivia Martinez', 'Quality Control Inspector', 'Quality Control', 'Full-time'),
+    (9, 'James Anderson', 'Warehouse Supervisor', 'Warehouse', 'Full-time'),
+    (10, 'Emma Garcia', 'Packaging Specialist', 'Warehouse', 'Part-time');
+
+-- Create table `Materials`
+CREATE TABLE IF NOT EXISTS Materials (
+    Material_ID INT PRIMARY KEY,
+    AvailableVolume DECIMAL(10, 2),
+    Quality VARCHAR(50),
+    ExpireDate DATE
+);
+
+-- Insert data into `Materials`
+INSERT INTO Materials (Material_ID, AvailableVolume, Quality, ExpireDate) VALUES
+    (1, 100.00, 'High', '2023-12-31'),
+    (2, 50.50, 'Medium', '2023-10-15'),
+    (3, 75.25, 'Low', '2024-05-20'),
+    (4, 200.00, 'High', '2023-11-30'),
+    (5, 30.75, 'Medium', '2023-09-10'),
+    (6, 90.00, 'High', '2024-03-15'),
+    (7, 55.50, 'Low', '2023-12-31'),
+    (8, 80.25, 'Medium', '2024-02-28'),
+    (9, 150.00, 'High', '2023-10-15'),
+    (10, 20.50, 'Medium', '2023-07-31'),
+    (11, 65.75, 'Low', '2024-06-30'),
+    (12, 180.00, 'High', '2023-12-31'),
+    (13, 40.50, 'Medium', '2023-09-15'),
+    (14, 85.25, 'Low', '2024-07-20'),
+    (15, 120.00, 'High', '2023-11-30');
+
+-- Create table `salesstrategy`
+CREATE TABLE IF NOT EXISTS salesstrategy (
+    SID INT(11) AUTO_INCREMENT PRIMARY KEY,
+    PID VARCHAR(20) NOT NULL,
+    Price FLOAT NOT NULL,
+    Previous_Sales INT NOT NULL,
+    Current_Sales INT NOT NULL,
+    Difference VARCHAR(20) NOT NULL,
+    Solution_Strategy VARCHAR(200) NOT NULL
+);
+
+-- Insert data into `salesstrategy`
+INSERT INTO salesstrategy (PID, Price, Previous_Sales, Current_Sales, Difference, Solution_Strategy)
+VALUES 
+    ('Product1', 10.5, 100, 150, 'Increase', 'Implement marketing campaign'),
+    ('Product2', 20.3, 200, 180, 'Decrease', 'Improve product quality'),
+    ('Product3', 15.2, 150, 170, 'Increase', 'Expand sales channels'),
+    ('Product4', 12.7, 180, 160, 'Decrease', 'Offer discounts and promotions');
+
+-- Create table `employee`
+CREATE TABLE IF NOT EXISTS `employee` (
+    `id` int(11) NOT NULL,
+    `user_id` bigint(25) NOT NULL,
+    `user_name` varchar(255) NOT NULL,
+    `email` varchar(255) NOT NULL,
+    `work_hours` int(11) NOT NULL,
+    `password` varchar(25) NOT NULL,
+    `firstname` text NOT NULL,
+    `lastname` text NOT NULL,
+    `work_othours` int(11) NOT NULL,
+    `basic_pay` double NOT NULL,
+    `allowances` double NOT NULL,
+    `earinings` double NOT NULL,
+    `deductions` double NOT NULL,
+    `net_salary` double NOT NULL,
+    `total_salary` double NOT NULL,
+    `join_date` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Insert data into `employee`
+INSERT INTO `employee` (`id`, `user_id`, `user_name`, `email`, `work_hours`, `password`, `firstname`, `lastname`, `work_othours`, `basic_pay`, `allowances`, `earinings`, `deductions`, `net_salary`, `total_salary`, `join_date`) VALUES
+(1, 4292, 'chathuu', 'chathurangapriyadarshana29@gmail.com', 765906262, 'Cc2000@@', 'chathu', 'perera', 23, 0, 0, 150, 56, 0, 0, NULL),
+(2, 5073700692, 'sakila', 'sakila@gmail.com', 35, 'Sakila123', 'sakila', 'athapaththu', 10, 1000, 10, 170, 55, 100, 1000, '2023-06-01'),
+(4, 1534408141965486, 'admin', 'kalana@gmail.com', 765906262, 'Cc2000@', 'kalana', 'kasun', 27, 0, 0, 160, 50, 0, 0, NULL);
+
+-- Create table `holidaydetails`
+CREATE TABLE IF NOT EXISTS `holidaydetails` (
+    `ID` int(11) NOT NULL,
+    `Holiday_Name` text NOT NULL,
+    `Date` date NOT NULL,
+    `Status` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Insert data into `holidaydetails`
+INSERT INTO `holidaydetails` (`ID`, `Holiday_Name`, `Date`, `Status`) VALUES
+(2, 'Vesak Poya Day', '2023-06-16', 'Full Day'),
+(3, 'New year\'s Day', '2023-06-16', 'Full Day'),
+(5, 'Poson Poya Day', '2023-06-03', 'Full Day'),
+(6, 'Chrismas Day', '2023-12-25', 'Full Day');
+
+-- Add indexes for table `employee`
+ALTER TABLE `employee`
+  ADD PRIMARY KEY (`id`);
+
+-- Add indexes for table `holidaydetails`
+ALTER TABLE `holidaydetails`
+  ADD PRIMARY KEY (`ID`);
+
+-- Set auto-increment for table `employee`
+ALTER TABLE `employee`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+-- Set auto-increment for table `holidaydetails`
+ALTER TABLE `holidaydetails`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;

@@ -1,0 +1,303 @@
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F4F9F9;
+}
+
+/* Logo */
+.logo {
+  width: 200px;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  margin-right: 10px;
+}
+.button-link {
+  text-decoration: none; /* Remove underline from the link */
+}
+
+/* Sign-in and sign-up buttons */
+.signin-button,
+.signup-button {
+  border: none;
+  padding: 5px;
+  text-align: center;
+  text-decoration:solid;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+/* Sign-in button */
+.signin-button {
+  background-color: #0000003a;
+}
+
+/* Sign-up button */
+.signup-button {
+  background-color: #00000079;
+}
+
+/* Button border-radius */
+.signin-button,
+.signup-button {
+  border-radius: 12px;
+}
+
+body {
+  background:linear-gradient(to right,#ffffff,#585758b4);
+  font-family: Arial, sans-serif;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 30px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.intro {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px auto;
+  width: 80%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.join-us-button {
+  background-color: rgb(22, 189, 69);
+  border-radius: 15px;
+  width: 10px;    
+  height: 35px;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-style:bold;
+  box-shadow: 10px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  display:block;
+  margin:auto;
+  margin-top:20px;
+  background-color:#40b0bd;
+  border:none;
+  color:white;
+  padding:0.5rem 1.2rem;
+  text-align:center;
+  font-size:1rem;
+  border-radius:15px;
+  cursor:pointer;
+}
+
+input[type="submit"]:hover {
+  background-color:rgb(0, 0, 0);
+}
+
+.centered-images {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.centered-images1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.row {
+  display: flex;
+  align-items: left;
+  margin-top: 30px;
+}
+
+.row.reversed {
+  flex-direction:initial;
+}
+
+.left-section {
+  padding-left: 150px;
+  border-radius: 15px;
+}
+
+.right-section {
+  padding-right: 150px;
+  border-radius: 15px;
+}
+
+.section-heading {
+  font-size: 24px;
+  padding-left: 100px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.section-description {
+  font-size: 16px;
+  margin-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.learn-more-button {
+  display:block;
+  margin:auto;
+  margin-top:20px;
+  margin-left:100px;
+  background-color:#40b0bd;
+  border:none;
+  color:white;
+  padding:0.5rem 1.2rem;
+  text-align:center;
+  font-size:1rem;
+  border-radius:15px;
+  cursor:pointer;
+}
+
+.paragraph {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 15px;
+  background-color: #00000083;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.person-icon {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.person-icon img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.person-name {
+  text-align: center;
+  font-size: 16px;
+}
+
+.whats-new {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.new-paragraph {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.image-container-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 0 10px;
+  align-items: center;
+}
+
+.curve {
+  border-radius: 15px;
+}
+
+.image-container img {
+  width: 200px;
+  height: 200px;
+}
+
+.image-name {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #AAAAAA;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Footer logo */
+.footer-left img {
+  max-width: 100px;
+}
+
+/* Footer content alignment */
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+/* Footer heading container */
+.footer-heading {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer heading text */
+.footer-heading h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Buttons in the footer */
+.features-button,
+.about-button,
+.join-us-button1,
+.subscribe-button {
+  border: none;
+  padding: 8px 12px;
+  background-color: #ccc;
+  color: #fff;
+  margin: 4px 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.about-button{
+  width: 72px;
+}
+
+/* Input field and button for newsletter subscription */
+.newsletter-form input[type="email"],
+.subscribe-button {
+  padding: 8px;
+}
+
+/* Paragraph styles */
+p {
+  font-size: 14px;
+}
+
+/* Social media button styles */
+.social-media-buttons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Last social media button style */
+.social-media-buttons a:last-child img {
+  margin-right: 0;
+}

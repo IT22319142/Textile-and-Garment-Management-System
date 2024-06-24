@@ -1,0 +1,130 @@
+/* CSS Styles for Login Page */
+
+/* Body Styles */
+body {
+    font-family: sans-serif;
+    background-image: url('bg.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  /* Heading Styles */
+  h1 {
+    text-align: center;
+  }
+  
+  /* Form Styles */
+  form {
+    float: right;
+    text-align: left;
+    width: 35rem;
+    margin: auto;
+    color: whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 25px 25px;
+  }
+  
+  /* Input Styles */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+  }
+  
+  /* Button Styles */
+  .login_button,
+  .staff_button,
+  .update_button,
+  .signUP_button {
+    background-color: #030804;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .login_button:hover,
+  .staff_button:hover,
+  .update_button,
+  .signUP_button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .staff_button{
+    width:25%;
+    float: right;
+    margin-top: 0;
+    margin-left: 40%;
+    margin-right: 90px;
+    margin-top: 20px;
+  }
+  /* Headings Container Styles */
+  .headingsContainer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .headingsContainer p {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Main Container Styles */
+  .mainContainer {
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-style: bold;
+  }
+  
+  /* Subcontainer Styles */
+  .subcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .subcontainer a {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  /* Forgot Password Styles */
+  span.forgotpsd a {
+    float: right;
+    color: whitesmoke;
+    padding-top: 16px;
+  }
+  
+  .forgotpsd a {
+    color: rgb(74, 146, 235);
+  }
+  
+  .forgotpsd a:link {
+    text-decoration: none;
+  }
+  
+  /* Register Styles */
+  .register {
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .register a {
+    color: rgb(74, 146, 235);
+  }
+  
+  .register a:link {
+    text-decoration: none;
+  }
+  
+  

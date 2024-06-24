@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Invoice</title>
+    <link rel="stylesheet" href="Invoice.css">
+    <script src="invoice.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="Black.png" alt="Logo" height="50" width="50">
+        </div>
+        <!-- Navigation Menu -->
+        <nav>
+          <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="support.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button class="sign-out-button"><a href="login.php" class="button-link">Sign out</a></button>
+        </div>
+        <!-- Icons -->
+        <div class="icons">
+            <a href="profile.html" class="button-link">
+            <button class="icon-button">
+                <img src="notification.jpg" alt="Notification" class="icon-image">
+            </button>
+            </a>
+            <a href="profile.html" class="button-link">
+            <button class="icon-button">
+                <img src="profile.png" alt="Profile" class="icon-image">
+            </button>
+            </a>
+        </div>
+    </header>
+
+    <!-- Popup Menu -->
+    <div class="popup-menu">
+        <button class="menu-button"><a href="home.php" class="button-link"> Dashboard</a></button>
+        <button class="menu-button"><a href="contract.html" class="button-link">Contracts</a></button>
+        <button class="menu-button"><a href="Invoice.html" class="button-link">Invoices</a></button>
+        <button class="menu-button"><a href="tracking.html" class="button-link">Track Orders</a></button>
+    </div>
+
+    <!-- Form Section -->
+    <form class="form">
+        <h1>Thank you for your purchase</h1>
+        <p class="form1">You will receive a confirmation letter through your email.</p>
+        
+        <div class="form-row">
+          <div class="form-col">
+            <!-- Form fields -->
+            <p>Date:</p>
+            <p>Customer:</p>
+            <p>Payment Method:</p>
+            <p>Order Number:</p>
+            <p>Total:</p>
+          </div>
+          
+          <div class="form-col">
+            <!-- Form field values -->
+            <input type="text" id="date" value="June 3, 2023" readonly>
+            <input type="text" id="customer" value="John Doe" readonly>
+            <input type="text" id="payment-method" value="Cash" readonly>
+            <input type="text" id="order-number" value="#123" readonly>
+            <input type="text" id="total" value="Rs.500,000.00" readonly>
+          </div>
+        </div>
+        
+        <hr>
+        
+        <!-- Order Item -->
+        <div class="order-item">
+          <div class="order-item-image">
+            <img src="main.png" alt="Jumpsuit">
+          </div>
+          
+          <div class="order-item-details">
+            <p class="item-name">Jumpsuit</p>
+            <p class="item-quantity">Quantity: 100</p>
+            <p class="item-price">Rs.5000.00</p>
+          </div>
+        </div>
+        
+        <!-- Form Actions -->
+        <div class="form-actions">
+          
+          <button class="continue-shopping-button"><a href="explore.html" class="button-link">Continue Shopping</a></button>
+          
+         
+          <button class="track-order-button"><a href="tracking.html" class="button-link">Track Order</a></button>
+          
+        </div>
+    </form>
+      
+    <!-- Footer -->
+    <footer>
+        <!-- Left section of footer -->
+        <div class="footer-left">
+            <p>&copy; 2023 Company. Inc. All rights reserved. Privacy | Terms</p>
+        </div>
+        <!-- Right section of footer -->
+        <div class="footer-right">
+            <!-- Social media links -->
+            <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.youtube.com"><img src="youtube.png" alt="YouTube"></a>
+        </div>
+    </footer>
+</body>
+</html>

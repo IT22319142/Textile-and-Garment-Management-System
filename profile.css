@@ -1,0 +1,155 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F4F9F9;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 750px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #8d2020;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #241d1d73;
+    color: #ffffff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.sign-out-button {
+    border: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: solid;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: #00000079;
+    margin-right: 10px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon-button {
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.icon-image {
+    width: 80%;
+    height: 80%;
+    object-fit: fill;
+}
+
+/* Profile section */
+.profile {
+    background-color: #00000057;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 10%;
+    padding: 15px;
+    text-align: center;
+}
+
+.profile-details {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.profile h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.info-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+span {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F9F9;
+    padding: 10px;
+    margin-top: 573px; 
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-right a {
+    display: inline-block;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.footer-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.button-link {
+    text-decoration: none; 
+    color: inherit;
+  }
